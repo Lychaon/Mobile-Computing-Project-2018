@@ -1,3 +1,11 @@
 page-home {
 
 }
+
+.main {
+    background: color($colors, primary, base);
+}
+
+.text {
+    color: color($colors, text, base);
+}
