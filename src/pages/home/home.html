@@ -1,11 +1,29 @@
-<!--<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>-->
-<ion-content  class="main" padding>
-  <h1 class="text"> Welcome To The Kingston Tour </h1>
-  <ion-button color="secondary">Click Me </ion-button>
+<ion-content  class="page-home">
+  <ion-slides>
+     <ion-slide *ngFor="let slide of slides">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="text">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <img [src]="slide.image" class="slide-image"/>
+      <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    
+    <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <img src="assets/imgs/slide-3.png" class="slide-image"/>
+      <h2 class="slide-title">Your wish is my command</h2>
+      <button ion-button large clear icon-end color="primary">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+
+  </ion-slides>
+  <!--<h1 class="title"> Welcome To The Kingston Tour </h1>-->
+  
+
 </ion-content>
