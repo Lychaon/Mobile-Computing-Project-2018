@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { LandingPage } from '../landing/landing';
 
 declare var jquery: any;
 declare var $: any;
@@ -14,6 +15,12 @@ export class HomePage {
   constructor(public navCtrl: NavController) {
 
   }
+
+  loadLanding() {
+    console.log('Heading to landing page');
+    this.navCtrl.push( LandingPage );   
+  }
+
   slides = [
     {
       title: "Welcome to the <b>Kingston Tour</b>!",
