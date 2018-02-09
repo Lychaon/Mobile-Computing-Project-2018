@@ -8,13 +8,21 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 import { LandingPage } from '../pages/landing/landing';
+import { MapsPage } from '../pages/maps/maps';
+import { NearbyPage } from '../pages/nearby/nearby';
+import { AboutPage } from '../pages/about/about';
+import { SettingsPage } from '../pages/settings/settings';
 
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    LandingPage
+    LandingPage,
+    MapsPage,
+    NearbyPage,
+    AboutPage,
+    SettingsPage
   ],
   imports: [
     BrowserModule,
@@ -24,7 +32,11 @@ import { LandingPage } from '../pages/landing/landing';
   entryComponents: [
     MyApp,
     HomePage,
-    LandingPage
+    LandingPage,
+    MapsPage,
+    NearbyPage,
+    AboutPage,
+    SettingsPage
   ],
   providers: [
     StatusBar,

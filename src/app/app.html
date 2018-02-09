@@ -11,19 +11,19 @@
                  <ion-icon icon-left name="home" style="margin-right:15px;"></ion-icon>
                     Home
             </button>
-             <button ion-item menuClose class="list-button">
+             <button ion-item menuClose class="list-button" (click)="loadMaps()">
                  <ion-icon icon-left name="map" style="margin-right:15px;"></ion-icon>
                     Map
             </button>
-             <button ion-item menuClose class="list-button">
+             <button ion-item menuClose class="list-button" (click)="loadNear()">
                  <ion-icon icon-left name="pin" style="margin-right:20px;"></ion-icon>
                     Nearby
             </button>
-            <button ion-item menuClose class="list-button">
+            <button ion-item menuClose class="list-button" (click)="loadSettings()">
                  <ion-icon icon-left name="cog" style="margin-right:15px;"></ion-icon>
                     Settings
             </button>
-             <button ion-item menuClose class="list-button">
+             <button ion-item menuClose class="list-button" (click)="loadAbout()">
                  <ion-icon icon-left name="information-circle" style="margin-right:15px;"></ion-icon>
                     About Us
             </button>

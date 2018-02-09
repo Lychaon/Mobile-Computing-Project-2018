@@ -5,6 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { LandingPage } from '../pages/landing/landing';
+import { MapsPage } from '../pages/maps/maps';
+import { NearbyPage } from '../pages/nearby/nearby';
+import { AboutPage } from '../pages/about/about';
+import { SettingsPage } from '../pages/settings/settings';
 
 @Component({
   templateUrl: 'app.html'
@@ -23,10 +27,15 @@ export class MyApp {
     });
   }
 
-  loadHome()
-  {
-    this.nav.setRoot(LandingPage);
-  }
+  loadSettings(){ this.nav.setRoot(SettingsPage); }
+
+  loadNear(){ this.nav.setRoot(NearbyPage); }
+
+  loadMaps() { this.nav.setRoot(MapsPage); }
+
+  loadAbout() { this.nav.setRoot(AboutPage); }
+
+  loadHome() { this.nav.setRoot(LandingPage); }
 
 }
 
