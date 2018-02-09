@@ -5,6 +5,7 @@ import { LandingPage } from '../landing/landing';
 declare var jquery: any;
 declare var $: any;
 
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -13,12 +14,12 @@ declare var $: any;
 export class HomePage {
 
   constructor(public navCtrl: NavController) {
-
+    
   }
 
   loadLanding() {
     console.log('Heading to landing page');
-    this.navCtrl.push( LandingPage );   
+    this.navCtrl.setRoot( LandingPage );   
   }
 
   slides = [
