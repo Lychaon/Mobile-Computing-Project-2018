@@ -1,4 +1,29 @@
 page-landing {
+
+    div {
+        line-height: 1.7;
+    }
  
+   .text {
+       color : color($colors, text, base);
+   }
+
+    .to-right {
+        float: right;
+        width: 60%;
+    }
+
+    .to-left {
+        float: left;
+        width: 40%;
+    }
+
+    .image {
+        background-image: url("../../assets/imgs/Kingston.jpg");
+    }
+    
+    p {
+        margin-bottom: 16px;
+    }
 
 }
