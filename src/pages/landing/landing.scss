@@ -1,29 +1,29 @@
 page-landing {
 
+    ion-list {
+        
+    }
+
     div {
-        line-height: 1.7;
+       
     }
  
-   .text {
-       color : color($colors, text, base);
-   }
-
-    .to-right {
-        float: right;
-        width: 60%;
+    .fit {
+        height: 100%;
+        width: 100%;
     }
 
-    .to-left {
-        float: left;
-        width: 40%;
+    .info {
+        height: 100%;
+        width: 100%;
+    }
+
+    .info p {
+         line-height: 1.7;
     }
 
     .image {
-        background-image: url("../../assets/imgs/Kingston.jpg");
-    }
-    
-    p {
-        margin-bottom: 16px;
+        background-image: url("../assets/imgs/Kingston.jpg");
     }
 
 }
