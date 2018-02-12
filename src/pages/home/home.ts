@@ -2,9 +2,6 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { LandingPage } from '../landing/landing';
 
-declare var jquery: any;
-declare var $: any;
-
 
 @Component({
   selector: 'page-home',

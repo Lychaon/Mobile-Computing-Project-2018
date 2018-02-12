@@ -12,6 +12,7 @@ import { MapsPage } from '../pages/maps/maps';
 import { NearbyPage } from '../pages/nearby/nearby';
 import { AboutPage } from '../pages/about/about';
 import { SettingsPage } from '../pages/settings/settings';
+import { EpPage } from '../pages/ep/ep';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SettingsPage } from '../pages/settings/settings';
     MapsPage,
     NearbyPage,
     AboutPage,
-    SettingsPage
+    SettingsPage,
+    EpPage
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,8 @@ import { SettingsPage } from '../pages/settings/settings';
     MapsPage,
     NearbyPage,
     AboutPage,
-    SettingsPage
+    SettingsPage,
+    EpPage
   ],
   providers: [
     StatusBar,

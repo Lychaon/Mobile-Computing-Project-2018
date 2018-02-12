@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { EpPage } from '../ep/ep';
 
 @IonicPage()
 @Component({
@@ -14,6 +15,11 @@ export class LandingPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LandingPage');
+  }
+
+  emanPark() 
+  {
+    this.navCtrl.push( EpPage );
   }
 
 }
